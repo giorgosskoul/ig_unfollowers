@@ -39,7 +39,7 @@ Download the ZIP file from that email.
 ## 📁 Placing your data
 
 When you unzip the file from Instagram, you’ll get a folder named **`connections`**, which contains another folder:
-
+```
 connections/
 └─ followers_and_following/
 ├─ blocked_profiles.json
@@ -51,7 +51,7 @@ connections/
 ├─ recent_follow_requests.json
 ├─ recently_unfollowed_profiles.json
 └─ removed_suggestions.json
-
+```
 
 👉 **Move the entire `connections` folder into the root directory of this repository.**
 
@@ -83,6 +83,7 @@ or
 ```python local_run.py```
 
 ## Repository Structure Prototype
+```
 unfollowers-app/
 ├─ app.py                     # main Streamlit app
 ├─ utils.py                   # JSON parsing and data helpers
@@ -98,14 +99,15 @@ unfollowers-app/
    ├─ app.icns
    ├─ button.png
    └─ app.ico
+```
 
-## Current Limitations
+## ⚠️ Current Limitations
 
 - Some “unfollowers” listed may actually be accounts that were deleted or deactivated after you followed them.
 - Only part of the list corresponds to real, active accounts.
 - The app works fully offline and uses only the JSON export — no API calls or login.
 
-## Notes
+## 💡 Notes
 
 - Tested with Python 3.9, but any version supporting Streamlit ≥1.30 should work.
 - Works on macOS, Windows, and Linux.
